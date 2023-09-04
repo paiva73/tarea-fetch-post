@@ -5,12 +5,10 @@ const birthDate = document.getElementById('fechaNacimiento');
 const btnSubmit = document.getElementById('btnSubmit');
 const form = document.getElementById('form');
 
-let user;
-
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    user = {
+    const user = {
         name: name.value,
         lastName: lastName.value,
         birthDate: birthDate.value
